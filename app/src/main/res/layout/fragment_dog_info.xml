@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_alignParentTop="true"
+        android:paddingTop="24dp"
+        android:text="My Dog's Activity"
+        android:textAlignment="center"
+        android:textColor="#2575F1"
+        android:textStyle="bold" />
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:stretchColumns="*"
+        android:id="@+id/mtable"
+        >
+        <TableRow
+            android:layout_width="0dp">
+
+            <TextView
+                android:id="@+id/tv_none"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_column="1"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/tv_now"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_column="1"
+                android:gravity="center"
+                android:paddingLeft="24dp"
+                android:paddingRight="30dp"
+                android:text="Now"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/tv_avg"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:gravity="center"
+                android:paddingLeft="20dp"
+                android:paddingRight="30dp"
+                android:text="Avg"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/tv_all"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:gravity="center"
+                android:text="Other"
+                android:textColor="#000" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="0dp">
+
+            <TextView
+                android:id="@+id/tv_running"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_column="1"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="30dp"
+                android:paddingRight="10dp"
+                android:text="Running Time"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/tv_running_now"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_column="1"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="60min"
+                android:textColor="#000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_running_avg"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_column="1"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="75min"
+                android:textColor="#000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_running_other"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_column="1"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="75min"
+                android:textColor="#000"
+                android:textStyle="bold" />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="0dp">
+
+            <TextView
+                android:id="@+id/tv_sleeping"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_column="1"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="30dp"
+                android:paddingRight="10dp"
+                android:text="Sleeping Time"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/tv_sleeping_now"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_column="1"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="16hrs"
+                android:textColor="#000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_sleeping_avg"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_column="1"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="12hrs"
+                android:textColor="#000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_sleeping_other"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_column="1"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="14hrs"
+                android:textColor="#000"
+                android:textStyle="bold" />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="0dp">
+
+            <TextView
+                android:id="@+id/tv_eating"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_column="1"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="30dp"
+                android:paddingRight="10dp"
+                android:text="Eating Time"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/tv_eating_now"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_column="1"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="30mins"
+                android:textColor="#000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_eating_avg"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_column="1"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="32mins"
+                android:textColor="#000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_eating_other"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_column="1"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="33mins"
+                android:textColor="#000"
+                android:textStyle="bold" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/tips_behavior"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mtable"
+        android:text="Behavior Tips"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:textColor="#000"
+        />
+
+    <TextView
+        android:id="@+id/tips_behavior_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tips_behavior"
+        android:text="Your dog has been excercising 15% less than other Golden Retrievers.\nDoggo Health recommends that you potentially take it for a walk for 20 minutes more in the morning and in the evening."
+        android:textColor="#000"
+        android:padding="32dp"
+        android:lineSpacingExtra="5dp"
+        />
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_alignParentTop="true"
+        android:paddingTop="24dp"
+        android:text="Health Risks for Your Dog"
+        android:textAlignment="center"
+        android:textColor="#2575F1"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginRight="18dp"
+        android:lineSpacingExtra="8dp"
+        android:text="80% of Pomski are under high risk of weak spine.\n20% of them have weak bones."
+        android:textColor="#303030"
+        android:textStyle="bold" />
+</RelativeLayout>

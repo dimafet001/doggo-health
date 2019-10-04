@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+</head>
+<body>
+	<div class="mapouter">
+		<div class="gmap_canvas">
+			<iframe width="380" height="250" id="gmap_canvas" src="https://maps.google.com/maps?q=moscone%20center&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+		</div>
+		<div class="health_block">
+			<div style="font-weight: 600;">Health State</div><div style="color: #ABAE08;">Medium</div>
+		</div>
+		<div class="blue_button button"><a href="activity_a://a">Request a Veterinarian</a></div>
+		<div class="blue_button button"><a href="activity_b://b">Ambulance</a></div>
+		<div class="blue_button button"><a href="activity_c://c">Schedule an Appointment</a></div>
+		<div class="blue_button button"><a href="activity_d://d">Schedule a Dog Party</a></div>
+
+		<style>
+				body {width: 80%; height: 90%; padding: 8px; margin: 0;}
+				.mapouter{position:relative;height:250px;width:380px;border: 1px solid black;}
+				.gmap_canvas {overflow:hidden;background:none!important;height:250px;width:380px;}
+				.health_block { margin: auto; width: 200px; height: 50px; margin-top: 30px;
+								display: flex; align-items: center; justify-content: center;}
+				.health_block > div { flex: 1; gravity: center; display: flex; align-items: center; justify-content: center;}
+				.blue_button {background: #DFEEFE; color: #2575F1;}
+				.button {display: flex; width: 100%; height: 50px; border-radius: 100px; margin-top: 20px;
+					align-items: center;
+					justify-content: center;}
+				a { color: #2575F1; text-decoration: none; }
+		</style>
+	</div>
+</body>
+</html>
